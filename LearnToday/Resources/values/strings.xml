@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">LearnToday</string>
-  <string name="fragment1">This is the first tab.</string>
+  <string name="app_name">Learn Today</string>
+  <string name="fragment1">What did you learn today?</string>
   <string name="fragment2">This is the second tab.</string>
 </resources>

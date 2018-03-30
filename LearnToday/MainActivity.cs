@@ -17,8 +17,7 @@ namespace LearnToday
     [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
-
-
+        //http://colorhunt.co/c/111218
 
         ViewPager pager;
         TabsAdapter adapter;
