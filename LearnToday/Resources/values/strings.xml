@@ -2,5 +2,5 @@
 <resources>
   <string name="app_name">Learn Today</string>
   <string name="fragment1">What did you learn today?</string>
-  <string name="fragment2">This is the second tab.</string>
+  <string name="fragment2">What do you want to do special tomorow?</string>
 </resources>

@@ -17,7 +17,7 @@ namespace LearnToday
     [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
-        //http://colorhunt.co/c/111218
+        
 
         ViewPager pager;
         TabsAdapter adapter;
@@ -42,6 +42,28 @@ namespace LearnToday
             tabs.SetupWithViewPager(pager);
             pager.OffscreenPageLimit = 3;
 
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            //change main_compat_menu
+            MenuInflater.Inflate(Resource.Menu.nav_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.action_edit:
+                    Toast.MakeText(this, "You pressed edit action!", ToastLength.Short).Show();
+                    break;
+                case Resource.Id.action_save:
+                    Toast.MakeText(this, "You pressed save action!", ToastLength.Short).Show();
+                    break;
+            }
+            return base.OnOptionsItemSelected(item);
         }
 
         class TabsAdapter : FragmentStatePagerAdapter
